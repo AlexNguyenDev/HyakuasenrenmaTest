@@ -19,7 +19,7 @@ def check_string(check_value):
     suit_value=['H','C','D','S']
     check=bool(re.search('\s',check_value))
     if check == True: 
-        return 3
+        return 2
     else:
         if check_value[0] not in suit_value:
             return 1
@@ -29,7 +29,7 @@ def desk(hand):
     cards = []
     suits = []
     list_covert=list(hand)
-    if checks_string == 3:
+    if checks_string == 2:
         return "Error Format String!!!"
     else:
         if checks_string==1:
