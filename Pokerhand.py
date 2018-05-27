@@ -17,7 +17,7 @@ def check_suit(suits):
     return 1
 def check_string(check_value):
     suit_value=['H','C','D','S']
-    check=bool(re.search('\s',check_value))
+    check=bool(re.search(r'\s',check_value))
     if check == True: 
         return 2
     else:
